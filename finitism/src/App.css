@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 4rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--base-200);
+  z-index: 10;
+}
+
+.heart-icon {
+  animation: pulse 1.25s linear infinite;
+  fill: red;
+  transform-origin: center;
+  will-change: transform;
+}
